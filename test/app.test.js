@@ -1,6 +1,6 @@
 const request = require('supertest');
-const app = require('../app');
-describe('GET /api/inmueblesdasd', () => {
+const app = require('../src/app');
+describe('GET /api/inmuebles', () => {
 it('debería retornar una lista de inmuebles', async () => {
 const res = await request(app).get('/api/inmuebles');
 expect(res.statusCode).toBe(200);
